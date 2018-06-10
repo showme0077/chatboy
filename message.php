@@ -61,7 +61,7 @@ switch($content)
             {
                 "message":
                 {
-                    "text": "잘못된 명령어입니다."
+                    "text": "잘못된 명령어입니다.\n명령어 목록\\n1. html\\n2. head\\n3. body\\n숫자 혹은 /html 명령어 형식으로 검색해주세요."
                 }
             }';
     break;
