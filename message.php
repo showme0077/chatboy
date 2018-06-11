@@ -11,19 +11,18 @@ $content = $data["content"];
 
 switch($content)
 {
-    case "/html ?":
     case "?":
     case "help":
         echo '
             {
                 "message":
                 {
-                    "text": "명령어 목록\\n1. html\\n2. head\\n3. body\\n숫자 혹은 /html 명령어 형식으로 검색해주세요."
+                    "text": "명령어 목록\\n도움말: ? 혹은 help\\n1. html\\n2. head\\n3. body\\n숫자 혹은 명령어로 검색해주세요."
                 }
             }';
     break;
 
-    case "/html html":
+    case "html":
     case 1:
         echo '
             {
@@ -34,7 +33,7 @@ switch($content)
             }';
     break;
 
-    case "/html head":
+    case "head":
     case 2:
         echo '
             {
@@ -45,7 +44,7 @@ switch($content)
             }';
     break;
 
-    case "/html body":
+    case "body":
     case 3:
         echo '
             {
@@ -61,7 +60,7 @@ switch($content)
             {
                 "message":
                 {
-                    "text": "잘못된 명령어입니다.\n명령어 목록\\n1. html\\n2. head\\n3. body\\n숫자 혹은 /html 명령어 형식으로 검색해주세요."
+                    "text": "잘못된 명령어 입니다.\\n? 혹은 help로 사용가능한 명령어를 검색해보세요."
                 }
             }';
     break;
